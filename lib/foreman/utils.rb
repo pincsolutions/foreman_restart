@@ -12,4 +12,14 @@ class Foreman::Utils
     end
   end
 
+  def self.temp_dir
+    if RUBY_VERSION < "1.9.1"
+      require 'tmpdir'
+      Dir.tmpdir
+    else
+      require 'etc'
+      Etc.systmpdir
+    end
+  end
+
 end

@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.version  = Foreman::VERSION
 
   gem.authors   = ["Jon Moses", "David Dollar"]
-  gem.emails    = %w( jon@burningbush.us ddollar@gmail.com)
+  gem.email    = %w( jon@burningbush.us ddollar@gmail.com)
   gem.homepage = "http://github.com/jmoses/foreman"
   gem.summary  = "Process manager for applications with multiple components, with restarting"
 

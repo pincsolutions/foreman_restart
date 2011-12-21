@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    foreman (0.18.0)
+    foreman_restartable (0.18.0r)
       term-ansicolor (~> 1.0.5)
       thor (>= 0.13.6)
 
@@ -46,7 +46,7 @@ PLATFORMS
 
 DEPENDENCIES
   fakefs (~> 0.3.2)
-  foreman!
+  foreman_restartable!
   parka
   rake
   rcov (~> 0.9.8)

@@ -7,7 +7,6 @@ require "timeout"
 require "term/ansicolor"
 require "fileutils"
 require 'pathname'
-require 'etc'
 
 class Foreman::Engine
 
@@ -21,7 +20,7 @@ class Foreman::Engine
   def initialize(procfile)
     @procfile  = read_procfile(procfile)
     @directory = File.expand_path(File.dirname(procfile))
-    @pidfilename = Pathname.new(Etc.systmpdir).join( "foreman_#{File.split(@directory)[-1]}.pid").to_s
+    @pidfilename = Pathname.new(Foreman::Utils.temp_dir).join( "foreman_#{File.split(@directory)[-1]}.pid").to_s
   end
 
   def processes
