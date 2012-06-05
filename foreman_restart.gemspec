@@ -2,7 +2,7 @@ $:.unshift File.expand_path("../lib", __FILE__)
 require "foreman/version"
 
 Gem::Specification.new do |gem|
-  gem.name     = "foreman_restartable"
+  gem.name     = "foreman_restart"
   gem.version  = Foreman::VERSION
 
   gem.authors   = ["Jon Moses", "David Dollar"]
